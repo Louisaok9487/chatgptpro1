@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taiwan Monopoly Royale</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+    <main class="app">
+      <header class="hero">
+        <h1>Taiwan Monopoly Royale</h1>
+        <p>
+          A luxury Taiwan-themed Monopoly experience: iconic cities, cultural events,
+          colorful districts, upgrades, and immersive game sounds.
+        </p>
+      </header>
+
+      <section class="panel setup">
+        <h2>Start Playing</h2>
+        <div class="setup-actions">
+          <button id="quickStartBtn" class="btn gold">Quick Start (You + 2 PC)</button>
+          <button id="startGameBtn" class="btn">Start Custom Game</button>
+        </div>
+        <div id="playerSetup" class="player-setup"></div>
+      </section>
+
+      <section class="layout">
+        <section class="panel board-panel">
+          <div class="board-header">
+            <h2>Monopoly Board</h2>
+            <div id="diceDisplay" class="dice-display">Dice: -</div>
+          </div>
+          <div id="board" class="board"></div>
+        </section>
+
+        <aside class="side-column">
+          <section class="panel control-panel">
+            <h2>Turn Controls</h2>
+            <p id="turnInfo">Press Quick Start or Start Custom Game.</p>
+            <div class="control-buttons">
+              <button id="rollBtn" class="btn" disabled>Roll Dice</button>
+              <button id="endTurnBtn" class="btn" disabled>End Turn</button>
+            </div>
+            <div id="actionBox" class="action-box hidden">
+              <p id="actionText"></p>
+              <div class="control-buttons">
+                <button id="buyBtn" class="btn">Buy</button>
+                <button id="skipBtn" class="btn btn-ghost">Skip</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>Players</h2>
+            <div id="playerStatus"></div>
+          </section>
+
+          <section class="panel log-panel">
+            <h2>Royal Log</h2>
+            <ul id="gameLog"></ul>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
