@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taiwan Culture Monopoly Lite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Taiwan Culture Monopoly Lite</h1>
+      <p class="subtitle">
+        Build your Taiwanese city empire! Play with up to 4 players, and set each player as Human or PC.
+      </p>
+
+      <section class="panel" id="quickPlayPanel">
+        <h2>Play Now (Fast)</h2>
+        <ol>
+          <li>Click <strong>Quick Start (1 Human + 1 PC)</strong>.</li>
+          <li>Use <strong>Roll Dice</strong> then <strong>End Turn</strong>.</li>
+          <li>Buy Taiwan city properties, collect rent, and survive culture events.</li>
+        </ol>
+        <button id="quickStartBtn">Quick Start (1 Human + 1 PC)</button>
+      </section>
+
+      <section class="panel" id="setupPanel">
+        <h2>Custom Game Setup</h2>
+        <div id="playerSetup"></div>
+        <button id="startGameBtn">Start Custom Game</button>
+      </section>
+
+      <section class="board-section" id="playArea">
+        <h2>Play Area (Board)</h2>
+        <div id="board" class="board"></div>
+      </section>
+
+      <section class="panel controls" id="gameControls">
+        <h2>Turn Controls</h2>
+        <p id="turnInfo">Click "Quick Start" or "Start Custom Game" to begin.</p>
+        <div class="buttons">
+          <button id="rollBtn" disabled>Roll Dice</button>
+          <button id="endTurnBtn" disabled>End Turn</button>
+        </div>
+      </section>
+
+      <section class="panel" id="logPanel">
+        <h2>Game Log</h2>
+        <ul id="gameLog"></ul>
+      </section>
+
+      <section class="panel" id="statusPanel">
+        <h2>Players</h2>
+        <div id="playerStatus"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
